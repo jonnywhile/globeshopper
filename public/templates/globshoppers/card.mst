@@ -1,0 +1,13 @@
+{{#globshoppers}}
+<div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+    <div class="card" style="width: 20rem;">
+      <div class="card-block">
+        <h4 class="card-title"><a href="/globshoppers/view/{{id}}">{{user.firstName}} {{user.lastName}}</a></h4>
+        {{location.data.formatted_address}}
+      </div>
+      <div class="card-footer">
+          <a href="/requests/create/{{id}}" class="btn btn-primary">Create Request</a>
+      </div>
+    </div>
+</div>
+{{/globshoppers}}

@@ -1,0 +1,158 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "external/summernote.css";
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Bootstrap css
+@import "~bootstrap-select/sass/bootstrap-select.scss";
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+#map {
+    width: 457px;
+    height: 300px;
+}
+
+.top-buffer {
+    margin-top:20px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f8fa;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.card-block {
+  flex: 1 1 auto;
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 12px;
+}
+
+.card-header {
+  padding: 12px 20px;
+  margin-bottom: 0;
+  background-color: $gray-light;
+  border-bottom: 1px solid $black;
+}
+
+.card-footer {
+  padding: 12px 20px;
+  background-color: $gray-lightest;
+  border-top: 1px solid $black;
+}
+
+.mt-15 {
+    margin-top: 50px;
+}
+
+.rating-input {
+    font-size: 20px;
+}
+
+/** ====================
+ * Lista de Comentarios
+ =======================*/
+ .complaint-comments {
+    padding-left: 0px;
+    list-style: none;
+ }
+
+.complaint-comments {
+    li {
+        padding-bottom: 20px;
+    }
+}
+
+.comment-main-level:after {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+.comment-box .comment-head {
+	background: #FCFCFC;
+	padding: 10px 12px;
+	border-bottom: 1px solid #E5E5E5;
+	overflow: hidden;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.comment-box .comment-head i {
+	float: right;
+	margin-left: 14px;
+	position: relative;
+	top: 2px;
+	color: #A6A6A6;
+	cursor: pointer;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+.comment-box .comment-head i:hover {
+	color: #03658c;
+}
+
+.comment-box .comment-name {
+	color: #283035;
+	font-size: 14px;
+	font-weight: 700;
+	float: left;
+	margin-right: 10px;
+}
+
+.comment-box .comment-name a {
+	color: #283035;
+}
+
+.comment-box .comment-head span {
+	float: left;
+	color: #999;
+	font-size: 13px;
+	position: relative;
+	top: 1px;
+}
+
+.comment-box .comment-content {
+	background: #FFF;
+	padding: 12px;
+	font-size: 15px;
+	color: #595959;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+#editor {
+    overflow:scroll;
+    max-height:300px;
+    height: 300px;
+    padding: 4px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+}
